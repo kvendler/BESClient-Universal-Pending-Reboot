@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
+	<Fixlet>
+		<Title>Execute Required Reboot With Delay (Windows)</Title>
+		<Description><![CDATA[<P><FONT size=4>This Fixlet will show as relevant for <STRONG><FONT color=#0000ff>Windows devices</FONT></STRONG> that have a <STRONG>Pending Restart.</STRONG></FONT></P>
+<P><FONT size=4><FONT size=4>This Fixlet&nbsp;includes a&nbsp;<STRONG><FONT color=#ff0000>three (3) minute</FONT></STRONG>&nbsp;delay to allow the system administrator to manually&nbsp;cancel the reboot in the event this Fixlet is deployed in error or they change their mind.</FONT></P></FONT>]]></Description>
+		<Relevance>windows of operating system and pending restart</Relevance>
+		<Category></Category>
+		<Source>Internal</Source>
+		<SourceID></SourceID>
+		<SourceReleaseDate>2023-06-26</SourceReleaseDate>
+		<SourceSeverity></SourceSeverity>
+		<CVENames></CVENames>
+		<SANSID></SANSID>
+		<MIMEField>
+			<Name>x-fixlet-modification-time</Name>
+			<Value>Tue, 27 Jun 2023 04:26:04 +0000</Value>
+		</MIMEField>
+		<Domain>BESC</Domain>
+		<DefaultAction ID="Action1">
+			<Description>
+				<PreLink>Click </PreLink>
+				<Link>here</Link>
+				<PostLink> to deploy this action.</PostLink>
+			</Description>
+			<ActionScript MIMEType="application/x-Fixlet-Windows-Shell">// Enter your action script here
+restart 180</ActionScript>
+		</DefaultAction>
+	</Fixlet>
+</BES>
